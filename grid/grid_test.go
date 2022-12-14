@@ -6,7 +6,7 @@ import (
 )
 
 func TestGrid(t *testing.T) {
-	t.Run("should return a grid of 10 x 10", func(t *testing.T) {
+	t.Run("should return a grid of 3 x 3", func(t *testing.T) {
 		expectedResponse := [][]uint8{
 			{0, 0, 0},
 			{0, 0, 0},
@@ -35,7 +35,7 @@ func TestGrid(t *testing.T) {
 		assert.Equal(t, expectedResponse, InitializeSeedGrid(4, 4, seedCells).grid)
 	})
 
-	t.Run("should return grid of 4 x 4 with toad pattern", func(t *testing.T) {
+	t.Run("should return grid of 5 x 5 with toad pattern", func(t *testing.T) {
 		expectedResponse := [][]uint8{
 			{0, 0, 1, 0, 0},
 			{0, 1, 0, 0, 1},
@@ -75,7 +75,7 @@ func TestGrid(t *testing.T) {
 		assert.Equal(t, expectedResponse, grid.grid)
 	})
 
-	t.Run("should return grid of 4x4 with block pattern", func(t *testing.T) {
+	t.Run("should return grid of 4 x 4 with block pattern", func(t *testing.T) {
 		expectedResponse := [][]uint8{
 			{0, 0, 0, 0},
 			{0, 1, 1, 0},
